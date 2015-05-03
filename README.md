@@ -1,6 +1,5 @@
 Azure Machine Learning API java client
 ===
-API Client
 
 
 # How to use
