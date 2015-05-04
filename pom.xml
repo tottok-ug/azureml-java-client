@@ -18,7 +18,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>(4.11,]</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -49,4 +49,19 @@
 			</plugin>
 		</plugins>
 	</build>
+	<description>Azure Machine Learning Web Service Java Client.</description>
+	<scm>
+		<url>git@github.com:tottok-ug/azureml-java-client.git</url>
+		<connection>git</connection>
+		<developerConnection>tottokug</developerConnection>
+		<tag>AzureML,Java</tag>
+	</scm>
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/tottok-ug/azureml-java-client/issues</url>
+	</issueManagement>
+	<organization>
+		<name>tottok-ug</name>
+		<url>https://github.com/tottok-ug/</url>
+	</organization>
 </project>
