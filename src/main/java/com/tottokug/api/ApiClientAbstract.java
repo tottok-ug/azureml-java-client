@@ -1,4 +1,4 @@
-package com.tottokug;
+package com.tottokug.api;
 
 import java.io.IOException;
 import java.net.URI;
@@ -21,12 +21,15 @@ import org.apache.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.tottokug.api.azureml.AzureMLRequest;
+import com.tottokug.api.azureml.AzureMLResponse;
+
 /**
  * 
  * @author tokugami
  *
  */
-public class ApiClientAbstract implements ApiClient {
+public abstract class ApiClientAbstract implements ApiClient {
 
 	static final Logger logger = LoggerFactory.getLogger(ApiClientAbstract.class);
 
@@ -64,19 +67,6 @@ public class ApiClientAbstract implements ApiClient {
 	 */
 	public String getApiEndpoint() {
 		return this.endpoint;
-	}
-
-	/**
-	 * @author tokugami
-	 * @return
-	 * @param
-	 */
-	public AzureMLResponse request(AzureMLRequest request) {
-		return null;
-	}
-
-	public AzureMLBatchResponse requestBatch(AzureMLBatchRequest requset) {
-		return null;
 	}
 
 	public AzureMLResponse requestHttp(AzureMLRequest request) throws URISyntaxException, MethodNotSupportedException {

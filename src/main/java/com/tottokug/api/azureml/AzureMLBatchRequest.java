@@ -1,8 +1,10 @@
-package com.tottokug;
+package com.tottokug.api.azureml;
 
 import java.util.Map;
 
-public class AzureMLBatchRequest implements AzureMLRequest {
+import com.tottokug.api.ApiRequest;
+
+public class AzureMLBatchRequest implements ApiRequest {
 
 	public Map<String, MLParameter> getParameters() {
 		// TODO Auto-generated method stub

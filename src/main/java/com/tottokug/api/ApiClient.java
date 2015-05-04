@@ -1,4 +1,4 @@
-package com.tottokug;
+package com.tottokug.api;
 
 /**
  * 
@@ -24,13 +24,13 @@ public interface ApiClient {
 	 * @param request
 	 * @return
 	 */
-	public AzureMLResponse request(AzureMLRequest request);
+	public ApiResponse request(ApiRequest request);
 
 	/**
 	 * 
 	 * @param requset
 	 * @return
 	 */
-	public AzureMLBatchResponse requestBatch(AzureMLBatchRequest requset);
+	public ApiResponse requestBatch(ApiRequest requset);
 
 }

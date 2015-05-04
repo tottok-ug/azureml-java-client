@@ -1,4 +1,4 @@
-package com.tottokug;
+package com.tottokug.api;
 
 public enum ParameterType {
 	STRING("String"), NUMBER("Number");

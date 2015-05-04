@@ -1,13 +1,14 @@
-package com.tottokug;
+package com.tottokug.api;
 
 import java.util.Map;
 
-public interface AzureMLRequest {
+import com.tottokug.api.azureml.MLParameter;
+
+public interface ApiRequest {
 
 	public Map<String, MLParameter> getParameters();
 
 	public Map<String, String> getHeaders();
 
 	public String getRequestBody();
-
 }
