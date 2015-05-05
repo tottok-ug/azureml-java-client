@@ -21,9 +21,6 @@ import org.apache.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.tottokug.api.azureml.ApiRequest;
-import com.tottokug.api.azureml.ApiResponse;
-
 /**
  * 
  * @author tokugami

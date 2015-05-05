@@ -2,7 +2,7 @@ package com.tottokug.api.azureml;
 
 import com.tottokug.api.ParameterType;
 
-public interface MLParameter {
+public interface AzureMLParameter {
 
 	ParameterType getParameterType();
 

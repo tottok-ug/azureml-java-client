@@ -6,7 +6,7 @@ import com.tottokug.api.ApiRequest;
 
 public class AzureMLBatchRequest implements ApiRequest {
 
-	public Map<String, MLParameter> getParameters() {
+	public Map<String, AzureMLParameter> getParameters() {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -7,7 +7,7 @@ import com.tottokug.api.ApiRequest;
 public class AzureMLRequest implements ApiRequest {
 
 	@Override
-	public Map<String, MLParameter> getParameters() {
+	public Map<String, AzureMLParameter> getParameters() {
 		// TODO Auto-generated method stub
 		return null;
 	}
