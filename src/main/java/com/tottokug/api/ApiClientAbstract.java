@@ -21,8 +21,8 @@ import org.apache.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.tottokug.api.azureml.AzureMLRequest;
-import com.tottokug.api.azureml.AzureMLResponse;
+import com.tottokug.api.azureml.ApiRequest;
+import com.tottokug.api.azureml.ApiResponse;
 
 /**
  * 
@@ -36,7 +36,7 @@ public abstract class ApiClientAbstract implements ApiClient {
 	private String apikey;
 	private String endpoint;
 
-	private ResponseHandler<AzureMLResponse> responseHandler;
+	private ResponseHandler<ApiResponse> responseHandler;
 
 	private HttpContext httpContext;
 
@@ -44,10 +44,10 @@ public abstract class ApiClientAbstract implements ApiClient {
 	 * @author tokugami
 	 */
 	public ApiClientAbstract() {
-		responseHandler = new ResponseHandler<AzureMLResponse>() {
+		responseHandler = new ResponseHandler<ApiResponse>() {
 
 			@Override
-			public AzureMLResponse handleResponse(HttpResponse arg0) throws ClientProtocolException, IOException {
+			public ApiResponse handleResponse(HttpResponse arg0) throws ClientProtocolException, IOException {
 				return null;
 			}
 
@@ -69,7 +69,7 @@ public abstract class ApiClientAbstract implements ApiClient {
 		return this.endpoint;
 	}
 
-	public AzureMLResponse requestHttp(AzureMLRequest request) throws URISyntaxException, MethodNotSupportedException {
+	public ApiResponse requestHttp(ApiRequest request) throws URISyntaxException, MethodNotSupportedException {
 		List<Header> defaultHeaders = Collections.synchronizedList(new ArrayList<Header>());
 
 		try (CloseableHttpClient httpClient = HttpClientBuilder.create().setDefaultHeaders(defaultHeaders)
