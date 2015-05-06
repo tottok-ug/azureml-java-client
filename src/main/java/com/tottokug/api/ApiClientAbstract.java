@@ -105,11 +105,9 @@ public abstract class ApiClientAbstract implements ApiClient {
 	headers.forEach((k, v) -> {
 	    headerlist.add(new BasicHeader(k, v));
 	});
-	if (!headers.containsKey("Authorization")) {
-	    headerlist.add(new BasicHeader("Authorization", String.format(
-		    "Bearer ", this.apikey)));
-	}
-	return headerlist.toArray(new Header[0]);
+	
+
+	return this.additionalHeaders(headerlist).toArray(new Header[0]);
     }
 
     protected abstract List<Header> additionalHeaders(List<Header> header);
